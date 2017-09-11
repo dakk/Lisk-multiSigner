@@ -18,7 +18,7 @@ from sys import version_info
 #### ADAPT THESE VARIABLES TO YOUR NEEDS/CONFIG ####
 
 # Node to connect to. Recommended to use your own node or a node you trust
-NODE = "https://my.node.io"
+NODE = "http://localhost:8000"
 
 # Publickey of the account which contains the Multisig transactions.
 # This is not your account you are using to sign the transactions.
@@ -27,7 +27,7 @@ if r.lower () == 'lig':
     PUBKEY = "5fdd42a495e6798e7e8524da4c0fdeb290456d3fc25d602e969db6c48dda17ac"
 else:
     PUBKEY = "380b952cd92f11257b71cce73f51df5e0a258e54f60bb82bccd2ba8b4dff2ec9"
-    
+
 # This is the secret of the account you use to sign the transactions.
 # It must be registered as on of the signing accounts
 SECRET = raw_input ("Secret: ")
